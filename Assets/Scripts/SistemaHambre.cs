@@ -1,12 +1,13 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SistemaHambre : MonoBehaviour
 {
     private float hambre = 100;
     private float reduccionHambre = 10;
-    private float tiempoReducirHambre = 2;
+    private float tiempoReducirHambre = 5;
     private float currentTimeReducirHambre;
 
     public TextMeshProUGUI textoHambre;
@@ -36,11 +37,11 @@ public class SistemaHambre : MonoBehaviour
 
         if(hambre <= 0){
             // Aquí puedes agregar la lógica para la muerte por hambre, como cargar una escena de Game Over o reiniciar el nivel.
-            Debug.Log("¡El jugador ha muerto de hambre!");
+            SceneManager.LoadScene("GameOver");
         }
     }
 
-    public void AumentarVida(int cantidad){
+    public void AumentarHambre(int cantidad){
     hambre += cantidad;
     // Asegurar que la hambre no supere 100
     hambre = Mathf.Clamp(hambre, 0, 100);

@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Sangre
+  - "ObjetoDa\xF1o"
+  - Corazon
+  - Checkpoint
+  - torch
+  - cof
   layers:
   - Default
   - TransparentFX
@@ -12,7 +17,7 @@ TagManager:
   - Sangre
   - Water
   - UI
-  - 
+  - Suelo
   - 
   - 
   - 
@@ -41,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Check
+    uniqueID: 2254287697
     locked: 0

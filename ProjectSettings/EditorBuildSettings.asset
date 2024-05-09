@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 807bd5901a84e5d479700b4359eb248b
   - enabled: 1
-    path: Assets/Scenes/SistemaHambre.unity
-    guid: a59c515fb36cb2649b64697de635d80d
+    path: Assets/Scenes/Tutorial .unity
+    guid: c9dd52907e46b9147a277748004d2426
+  - enabled: 1
+    path: Assets/Scenes/NivelUno.unity
+    guid: ba6590402614ab048bf6b6d20add577b
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 5b9f12e9cfeae2a44be1f32b45c79dfc
+  - enabled: 1
+    path: Assets/Scenes/Victoria.unity
+    guid: 33a00fefd947be440b5408940f081019
   m_configObjects: {}

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8786108449197117954
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 304803484058962164, guid: aee6cefa20d046a439b641b1432070e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 86.89875
+      objectReference: {fileID: 0}
+    - target: {fileID: 304803484058962164, guid: aee6cefa20d046a439b641b1432070e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.559034
+      objectReference: {fileID: 0}
+    - target: {fileID: 304803484058962164, guid: aee6cefa20d046a439b641b1432070e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 304803484058962164, guid: aee6cefa20d046a439b641b1432070e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 304803484058962164, guid: aee6cefa20d046a439b641b1432070e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 304803484058962164, guid: aee6cefa20d046a439b641b1432070e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 304803484058962164, guid: aee6cefa20d046a439b641b1432070e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 304803484058962164, guid: aee6cefa20d046a439b641b1432070e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 304803484058962164, guid: aee6cefa20d046a439b641b1432070e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 304803484058962164, guid: aee6cefa20d046a439b641b1432070e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6575403394908475254, guid: aee6cefa20d046a439b641b1432070e9, type: 3}
+      propertyPath: m_Name
+      value: FallingPlatInvisible Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aee6cefa20d046a439b641b1432070e9, type: 3}

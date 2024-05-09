@@ -1,18 +1,40 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Sangre : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D other){
-        if(other.CompareTag("Player")){
-            // Obtener el componente SistemaHambre del jugador
-            SistemaHambre sistemaHambre = other.GetComponent<SistemaHambre>();
-            if(sistemaHambre != null){
-                // Aumentar la vida del jugador en 10 puntos
-                sistemaHambre.AumentarVida(10);
-            }
+    public AudioSource clip;
+    private bool isPlaying = false;
 
-            // Destruir este objeto "Sangre"
-            Destroy(gameObject);
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            SistemaHambre sistemaHambre = other.GetComponent<SistemaHambre>();
+            if (sistemaHambre != null)
+            {
+                sistemaHambre.AumentarHambre(10);
+                if (!isPlaying)
+                {
+                    clip.Play();
+                    isPlaying = true;
+                }
+            }
         }
+    }
+
+    private void Update()
+    {
+        if (isPlaying && !clip.isPlaying)
+        {
+            isPlaying = false;
+            gameObject.SetActive(false); // Desactivar el objeto cuando el sonido deja de reproducirse
+            Invoke("ActivarSangre", 5f); // Activar el objeto después de 5 segundos
+        }
+    }
+
+    private void ActivarSangre()
+    {
+        gameObject.SetActive(true); // Activar el objeto después de 5 segundos
     }
 }
